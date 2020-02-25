@@ -25,12 +25,6 @@ var orm = {
         });
     },
 
-    // UPDATE table_reference
-    // SET assignment_list
-    // [WHERE where_condition]
-    // [ORDER BY ...]
-    // [LIMIT row_count]
-
     // updateOne method
     updateOne: function(table, cols, condition, cb) {
         var queryString = `UPDATE ${table} SET ${cols} WHERE ${condition};`
