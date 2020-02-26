@@ -1,0 +1,43 @@
+body {
+  background-color: rgb(221, 187, 34);
+  height:100%;
+}
+img {
+  width: 8rem;
+  height: 8rem;
+  
+}
+.container, .row, .col {
+  /* border: 2px solid black; */
+  margin-top:20px;
+  margin-bottom:20px;
+}
+.center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+
+/* li {
+    padding: 5px;
+    margin: 5px;
+    background: #faebd7;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .create-update-form {
+    padding: 5px;
+    margin: 5px;
+    background: aqua;
+  }
+  
+  .form-group {
+    margin-bottom: 5px;
+  } */
+  
