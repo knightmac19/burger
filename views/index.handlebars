@@ -30,7 +30,7 @@
                                 <th scope="row">{{id}}</th>
                                 <td>{{burger_name}}</td>
                                 <td>
-                                    <button class="btn btn-secondary devour" data-id="{{this.id}}">Devour</button>
+                                    <button class="btn btn-secondary devour" data-id="{{this.id}}" data-devoured="1">Devour</button>
                                 </td>
                             </tr>
                             {{/unless}}
@@ -69,7 +69,7 @@
             <div class="col input-col">
             <!-- input box column -->
                     <input id="burger-input" placeholder="Burger Name...">
-                    <button class="btn btn-primary mb-2" type="submit">Submit Burger</button>
+                    <button class="btn btn-primary mb-2 add-burger" type="submit">Submit Burger</button>
             </div>
         </div>
 
