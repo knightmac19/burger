@@ -10,20 +10,13 @@ body {
   margin-left: auto;
 }
 .container, .row, .col {
-  /* border: 2px solid black; */
   margin-top:20px;
   margin-bottom:20px;
 }
 .input-col {
   text-align: center;
 }
-/* .center {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top:10px;
-  margin-bottom:10px;
-} */
+
 
 .footer {
   position: fixed;
