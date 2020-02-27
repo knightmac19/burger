@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handlebars template</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrapCSS.css">
+    <!-- FontAwesome CSS -->
+    <script src="https://kit.fontawesome.com/5f1d56bd16.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/burger_style.css">
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="../js/bootstrapJS.js"></script>
+    
+    <script src="../js/burgers.js"></script>
+
+</head>
+<body>
+    <div class="container w-75">
+        <!-- header container -->
+        <div class="row">
+            <div class="col">
+                <i class="fas fa-hamburger fa-3x text-center"></i>
+                <br>
+                <h1 class="text-center">Eat Da Burger!</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container w-75">
+        <!-- main container -->
+        <div class="row">
+            <div class="col">
+                <!-- column to be devoured -->
+                <table class="table table-dark all-burgers">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Devour?</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>
+                            <button class="btn btn-secondary devour">Devour</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="col">
+                <!-- column devoured -->
+                <table class="table devoured-burgers">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Delete?</th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>
+                            <button class="btn btn-secondary delete">Delete</button>
+                        </td>
+                        
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+        <div class="row">
+            <!-- input box column -->
+        </div>
+
+
+    </div>
+
+
+
+    <div class="footer">Eat Da Burger! 2020</div>
+
+    
+</body>
+</html>
