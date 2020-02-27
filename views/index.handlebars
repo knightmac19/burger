@@ -30,7 +30,7 @@
                                 <th scope="row">{{id}}</th>
                                 <td>{{burger_name}}</td>
                                 <td>
-                                    <button class="btn btn-secondary devour" data-id="{{this.id}}" data-devoured="1">Devour</button>
+                                    <button class="btn btn-secondary devour" data-id="{{id}}" data-devoured="1">Devour</button>
                                 </td>
                             </tr>
                             {{/unless}}
@@ -45,7 +45,7 @@
                       <tr>
                         <th scope="col">#</th>
                         <th scope="col">Name</th>
-                        <th scope="col">Delete?</th>
+                        
                       </tr>
                     </thead>
                     <tbody>
@@ -54,9 +54,9 @@
                             <tr>
                                 <th scope="row">{{id}}</th>
                                 <td>{{burger_name}}</td>
-                                <td>
-                                    <button class="btn btn-secondary delete" data-id="{{this.id}}">Delete</button>
-                                </td>
+                                {{!-- <td>
+                                    <button class="btn btn-secondary delete" data-id="{{id}}">Delete</button>
+                                </td> --}}
                             </tr>
                             {{/if}}
                         {{/each}}

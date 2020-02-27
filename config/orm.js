@@ -51,6 +51,7 @@ var orm = {
         queryString +=") ";
         
         console.log(queryString);
+        console.log("Vals: " + vals)
         
         connection.query(queryString, vals, function(err, result) {
             if (err) {
@@ -64,7 +65,7 @@ var orm = {
     updateOne: function(table, objColVals, condition, cb) {
         var queryString = "UPDATE " + table;
 
-        queryString += "SET ";
+        queryString += " SET ";
         queryString += objectToSQL(objColVals);
         queryString += " WHERE ";
         queryString += condition;

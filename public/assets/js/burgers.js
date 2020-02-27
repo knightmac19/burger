@@ -8,7 +8,7 @@ $(function() {
             devoured: newDevour
         };
 
-        $.ajax("/api/burgers" + id, {
+        $.ajax("/api/burgers/" + id, {
             type: "PUT",
             data: newDevourState
         }).then(
@@ -22,8 +22,12 @@ $(function() {
 
     $(".add-burger").on("click", function(event) {
         event.preventDefault();
+        var burgerName = $("#burger-input").val().trim();
+        console.log(burgerName);
+
         var newBurger = {
-            name: $("#burger-input").val().trim()
+            name: burgerName
+            // devoured: 0
         };
 
         $.ajax("/api/burgers", {
@@ -31,7 +35,7 @@ $(function() {
             data: newBurger
         }).then(
             function() {
-                console.log("created new cat");
+                console.log("created new burger");
                 location.reload();
             }
         );
